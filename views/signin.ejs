@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <main>
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Sign In</h2>
+                </header>
+                <div class="main-content">
+                    <form action="/signin" method="POST">
+                        <div class="input-wrapper">
+                            <input type="text" name="username" class="form-input" placeholder="Username" required data-form-input>
+                            <input type="password" name="password" class="form-input" placeholder="Password" required data-form-input>
+                        </div>
+                        <% if (typeof error !== 'undefined') { %>
+                            <p class="error-message"><%= error %></p>
+                        <% } %>
+                        <button class="form-btn" type="submit">Sign In</button>
+                    </form>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
+

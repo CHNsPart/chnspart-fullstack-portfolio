@@ -1,0 +1,1 @@
+# chnspart-vcard

@@ -1,0 +1,27 @@
+{
+  "name": "chnspart-vcard",
+  "version": "1.1.0",
+  "description": "chnspart portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "vcard",
+    "personal website",
+    "web development",
+    "web design",
+    "portfolio showcase"
+  ],
+  "author": "Touhidul Islam Chayan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.6.2"
+  }
+}
